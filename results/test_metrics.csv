@@ -1,0 +1,4 @@
+﻿strategy,split,questions,hit_at_1_count,hit_at_1,evidence_hit_at_3_count,evidence_hit_at_3
+A,test,5,2,0.4,3,0.6
+B,test,5,3,0.6,3,0.6
+C,test,5,3,0.6,3,0.6

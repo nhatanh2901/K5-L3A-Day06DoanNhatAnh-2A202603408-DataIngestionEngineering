@@ -1,65 +1,78 @@
-# Starter · PostgreSQL + pgvector
+# Starter · local PDF ingestion benchmark
 
-Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo PostgreSQL + pgvector local; các file trong `src/` là **khung pseudocode có TODO**, chưa đọc tài liệu, tạo embedding, lưu vector hay chạy benchmark. Bạn cần tự hiện thực. Vẫn có thể chọn Qdrant, Chroma hoặc vector store tương đương theo [GUIDE.md](../GUIDE.md).
+This starter runs locally with **Chroma PersistentClient** and a real multilingual
+Sentence Transformers model. Docker and API keys are not required. The first run
+downloads Python dependencies and the embedding model; allow network access and
+enough disk space.
 
-## Cấu trúc
+## Setup
 
-```text
-starter/
-├── docker-compose.yml     # PostgreSQL 16 + pgvector, chỉ mở cổng local
-├── init.sql               # bật extension khi tạo database mới
-├── requirements.txt       # psycopg, pypdf và python-dotenv
-├── .env.example           # cấu hình mẫu; copy thành .env
-├── scripts/check_setup.py # kiểm tra kết nối và extension (đã chạy được)
-├── src/
-│   ├── models.py          # cấu trúc dữ liệu mẫu
-│   ├── ingestion.py       # TODO: đọc / chuẩn hóa tài liệu
-│   ├── chunking.py        # TODO: chia chunk
-│   ├── embeddings.py      # TODO: chọn model API hoặc local
-│   ├── store.py           # TODO: lưu vector, metadata và filter
-│   ├── evaluation.py      # TODO: chấm truy xuất, lưu trace
-│   └── run.py             # TODO: kết nối các bước thành pipeline
-├── data/                  # bạn tự chuẩn bị corpus được phép sử dụng
-└── results/               # lưu kết quả của bạn
-```
+Use Python 3.11–3.14 from the repository root:
 
-## 1. Cài và kiểm tra database
-
-Cần Docker Desktop hoặc Docker Engine + Compose, Python **3.11–3.14**, và mạng để tải image/dependencies lần đầu. Các lệnh sau chạy từ thư mục `starter/`:
-
-```bash
+```powershell
 cd starter
-python3 -m venv .venv
-```
-
-Kích hoạt `.venv`: macOS/Linux dùng `source .venv/bin/activate`; Windows PowerShell dùng `.venv\Scripts\Activate.ps1`. Sau đó:
-
-```bash
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-# macOS/Linux: cp .env.example .env
-# Windows PowerShell: Copy-Item .env.example .env
-docker compose -p day6_student_starter up -d --wait
-python scripts/check_setup.py
 ```
 
-Kỳ vọng: hiện tên database, phiên bản PostgreSQL và pgvector, sau đó `Setup OK`. Đây **chỉ là kiểm tra hạ tầng**, không phải kết quả benchmark. Docker dùng cổng `127.0.0.1:55433` và mật khẩu cố định **chỉ dùng local cho lab**; nếu cổng bận, sửa đồng thời port trong `docker-compose.yml` và `DATABASE_URL` trong `.env`. `init.sql` chỉ chạy khi volume mới được tạo; nếu database sẵn có chưa bật extension, xem log Docker và kiểm tra cấu hình thay vì xóa volume chứa dữ liệu.
+Put permitted PDF source material in `starter/data/`. By default, every PDF
+directly inside that folder is ingested. To run on a selected set, pass each
+source with a repeated `--pdf` option (paths are relative to `starter/`):
 
-Dừng container nhưng giữ dữ liệu:
-
-```bash
-docker compose -p day6_student_starter stop
+```powershell
+python -m src.run --phase dev --pdf "data/Report Data.pdf" --pdf "data/Another Source.pdf"
 ```
 
-## 2. Chọn embedding model
+The pipeline records per-document provenance and page counts in
+`data/manifest.json` at the repository root. Add benchmark questions with
+verified evidence from any additional sources to `benchmark/questions.json`.
+Unknown rights/access information is marked as unverified, not assumed.
 
-Điền key tương ứng trong `.env` nếu dùng OpenRouter, OpenAI hoặc Gemini; **không commit `.env`**. Model local không cần API key. `requirements.txt` chỉ có dependencies cơ bản: tự cài SDK hoặc thư viện local phù hợp với model bạn chọn và ghi lại version/lệnh cài trong báo cáo. Ghi tên model và số chiều; dùng cùng model cho toàn bộ chiến lược và vector query tương thích vector document.
+## Run the benchmark
 
-## 3. Hoàn thiện pipeline
+The benchmark questions and verified evidence are in `benchmark/questions.json`.
+Run dev first; this fixes the strategy selection using the predeclared rule
+Evidence Hit@3, then Hit@1, then fewer chunks:
 
-1. Đặt corpus vào `data/` hoặc cung cấp manifest/hướng dẫn truy cập. Đọc [GUIDE.md](../GUIDE.md) về **30 trang nội dung**, quyền dữ liệu và metadata.
-2. Hoàn thiện từng hàm TODO trong `src/`. Lưu ID tài liệu, nguồn, trang/vị trí và ít nhất một trường filter có ích.
-3. Xây ít nhất ba cấu hình; ví dụ A fixed-size, B theo đoạn, C như B nhưng có filter. Cần cùng corpus, model và benchmark; nạp lại không nhân đôi và xử lý chunk cũ khi dữ liệu đổi.
-4. Tự viết ít nhất 20 câu hỏi kèm evidence, tách dev/test trước khi thử theo [BENCHMARK.md](../BENCHMARK.md). Lưu trace top-3 và báo cáo đủ năm tiêu chí.
-5. Sau khi hoàn thiện, chạy `python -m src.run` từ thư mục `starter/`. Trước khi làm TODO, lệnh này **chủ động báo `NotImplementedError`**.
+```powershell
+python -m src.run --phase dev
+python -m src.run --phase test
+```
 
-Lưu code, cấu hình, kết quả và lệnh chạy để người chấm tái lập; không commit key, dữ liệu mật hoặc dữ liệu không có quyền chia sẻ.
+The test command is gated until a dev selection has been recorded. The default
+run requires at least 30 useful content pages. For pipeline development only,
+`python -m src.run --phase dev --allow-short-corpus` permits a preliminary run
+and marks all its outputs as non-compliant. Do not report preliminary results as
+meeting the corpus requirement.
+
+The first run downloads
+`sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` (384 dimensions),
+pinned to revision `e8f8c211226b894fcb81acc59f3b34ba3efd5f42`.
+All three strategies use the same local model and cosine distance:
+
+| Strategy | Chunking | Retrieval |
+|---|---|---|
+| A | Fixed 300 characters, 40-character overlap | Dense top-3, no filter |
+| B | Greedy source-line/paragraph grouping, maximum 300 characters | Dense top-3, no filter |
+| C | Exactly the same chunks as B | Apply the question's `section` filter when present |
+
+`results/` contains phase metrics, full top-3 traces, ingestion statistics and
+audit sheets. The runner computes retrieval matches and generates blank audit
+templates; the current coherence and grounding sheets contain clearly labeled
+AI-assisted assessments, not independent human judgments. Retrieved metadata is
+also checked against its source page.
+
+## Data and submission notes
+
+The originally supplied PDF has 20 physical pages; the pipeline excludes the
+bibliography page when counting useful pages, leaving 19. The repository
+GUIDE/RUBRIC specify 30 useful pages; the learner reports that the instructor
+waived that threshold for this submission. The report records both the measured
+count and that clarification; it does not claim the corpus has 30 pages.
+
+The learner confirms permission to share the supplied PDF and its excerpts in
+the public repository. The PDF itself does not identify a specific license or
+original source URL; the manifest records the permission confirmation without
+claiming an open license. Do not commit API keys, `.env`, private documents or
+data you cannot redistribute.

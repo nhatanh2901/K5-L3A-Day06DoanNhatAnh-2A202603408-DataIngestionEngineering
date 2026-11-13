@@ -1,0 +1,218 @@
+{
+  "corpus_id": "report-instacart",
+  "created_before_retrieval_experiments": true,
+  "questions": [
+    {
+      "id": "q01",
+      "type": "direct",
+      "split": "dev",
+      "question": "Theo báo cáo, Gartner nhấn mạnh những yếu tố nào khi mô tả Big Data?",
+      "expected_answer": "Khối lượng, tốc độ và/hoặc sự đa dạng.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 4,
+      "evidence_quote": "Gartner nhấn mạnh ba yếu tố: khối lượng, tốc độ và/hoặc sự đa dạng"
+    },
+    {
+      "id": "q02",
+      "type": "direct_with_metadata_filter",
+      "split": "dev",
+      "question": "Chỉ xét Chương 2, HDFS chia nhỏ và sao chép dữ liệu như thế nào?",
+      "expected_answer": "File lớn được chia thành các block và mỗi block được sao chép trên nhiều DataNode.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 5,
+      "evidence_quote": "file lớn được chia thành các block (khối); mỗi block được sao chép (replication) trên nhiều DataNode khác nhau",
+      "filter": {
+        "section": "Chương 2 - cơ sở lý thuyết"
+      }
+    },
+    {
+      "id": "q03",
+      "type": "direct",
+      "split": "dev",
+      "question": "Trong mô hình HDFS được mô tả, NameNode và DataNode đảm nhiệm phần nào?",
+      "expected_answer": "NameNode giữ metadata; DataNode lưu dữ liệu thực.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 5,
+      "evidence_quote": "NameNode (metadata) và DataNode (dữ liệu thật)"
+    },
+    {
+      "id": "q04",
+      "type": "paraphrase",
+      "split": "dev",
+      "question": "Vì sao Spark có thể chạy nhanh hơn MapReduce thuần ở một số pipeline lặp?",
+      "expected_answer": "Spark có thể cache dữ liệu trong bộ nhớ của Executor, giảm việc ghi dữ liệu trung gian xuống đĩa.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 6,
+      "evidence_quote": "dữ liệu có thể được cache trong bộ nhớ của các Executor, nhờ đó vòng lặp thuật toán và pipeline nhiều giai đoạn chạy nhanh hơn rõ rệt"
+    },
+    {
+      "id": "q05",
+      "type": "direct",
+      "split": "dev",
+      "question": "Báo cáo phân biệt DataFrame với RDD ở điểm nào về schema?",
+      "expected_answer": "DataFrame có tên cột và schema; RDD là trừu tượng dữ liệu phân tán bất biến.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 7,
+      "evidence_quote": "DataFrame là lớp trừu tượng mức cao hơn: dữ liệu phân tán có tên cột và schema"
+    },
+    {
+      "id": "q06",
+      "type": "direct",
+      "split": "dev",
+      "question": "KMeans lặp lại thao tác nào để hình thành các nhóm?",
+      "expected_answer": "Gán mỗi điểm vào tâm gần nhất, cập nhật tâm bằng trung bình điểm trong nhóm, rồi lặp đến hội tụ hoặc hết số vòng.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 8,
+      "evidence_quote": "gán mỗi điểm vào tâm gần nhất, cập nhật tâm bằng trung bình các điểm trong nhóm"
+    },
+    {
+      "id": "q07",
+      "type": "paraphrase",
+      "split": "dev",
+      "question": "Vì sao báo cáo chuẩn hóa các đặc trưng trước khi chạy KMeans?",
+      "expected_answer": "Để chiều có biên độ lớn không chi phối khoảng cách Euclid chỉ vì khác đơn vị hoặc thang đo.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 8,
+      "evidence_quote": "khoảng cách Euclid sẽ bị chi phối bởi chiều có phương sai lớn"
+    },
+    {
+      "id": "q08",
+      "type": "exception",
+      "split": "dev",
+      "question": "Vì sao báo cáo không đưa kết quả pair co-occurrence đầy đủ vào phần thực nghiệm?",
+      "expected_answer": "Self-join tạo trung gian quá lớn và có thể vượt tài nguyên cụm nhỏ nếu không lọc hoặc lấy mẫu.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 9,
+      "evidence_quote": "số cặp ứng viên tăng nhanh theo kích thước giỏ"
+    },
+    {
+      "id": "q09",
+      "type": "direct",
+      "split": "dev",
+      "question": "Các giá trị nào được dùng để chia tập order_products theo eval_set?",
+      "expected_answer": "prior, train và test.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 10,
+      "evidence_quote": "tập order_products được tách eval_set (prior/train/test)"
+    },
+    {
+      "id": "q10",
+      "type": "direct",
+      "split": "dev",
+      "question": "Trường reordered biểu thị điều gì trong dữ liệu?",
+      "expected_answer": "Sản phẩm đã từng xuất hiện trong đơn trước của cùng khách hay chưa.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 10,
+      "evidence_quote": "Trường reordered cho biết sản phẩm đó đã từng xuất hiện trong đơn trước của cùng khách hay chưa."
+    },
+    {
+      "id": "q11",
+      "type": "direct_with_metadata_filter",
+      "split": "dev",
+      "question": "Trong Chương 3, cụm Spark chạy phiên bản nào?",
+      "expected_answer": "Spark 3.5.1.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 11,
+      "evidence_quote": "Spark version: 3.5.1",
+      "filter": {
+        "section": "Chương 3 - dữ liệu và môi trường thực nghiệm"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "direct_with_metadata_filter",
+      "split": "dev",
+      "question": "Chỉ trong Chương 4, báo cáo ghi nhận bao nhiêu đơn hàng, khách hàng và sản phẩm?",
+      "expected_answer": "3.421.083 đơn hàng, 206.209 khách hàng và 49.688 sản phẩm.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 12,
+      "evidence_quote": "3.421.083 đơn hàng gắn với 206.209 khách và 49.688 sản phẩm.",
+      "filter": {
+        "section": "Chương 4 - kết quả thực nghiệm"
+      }
+    },
+    {
+      "id": "q13",
+      "type": "direct",
+      "split": "dev",
+      "question": "Ngày nào và giờ nào có nhiều đơn nhất theo thống kê được nêu?",
+      "expected_answer": "order_dow = 0 và 10 giờ.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 12,
+      "evidence_quote": "ngày có nhiều đơn nhất là order_dow = 0 và giờ có nhiều đơn nhất là 10 giờ"
+    },
+    {
+      "id": "q14",
+      "type": "paraphrase",
+      "split": "dev",
+      "question": "Các đỉnh chu kỳ mua lại hằng tuần được báo cáo rơi vào khoảng cách nào?",
+      "expected_answer": "Khoảng 6 và 7 ngày; 30 ngày cũng phổ biến nhưng bị ảnh hưởng bởi mức trần dữ liệu.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 13,
+      "evidence_quote": "đỉnh ở 7 và 6 ngày cho thấy một bộ phận khách quay lại theo nhịp tuần"
+    },
+    {
+      "id": "q15",
+      "type": "direct",
+      "split": "dev",
+      "question": "Sản phẩm bán chạy nhất được tổng kết là gì và có bao nhiêu lượt mua?",
+      "expected_answer": "Banana, 472.565 lượt.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 15,
+      "evidence_quote": "Sản phẩm bán chạy nhất Banana (472.565 lượt)"
+    },
+    {
+      "id": "q16",
+      "type": "direct",
+      "split": "test",
+      "question": "Mỗi khách hàng được biểu diễn bằng bao nhiêu đặc trưng số trong mô hình phân cụm?",
+      "expected_answer": "Bốn đặc trưng số.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 15,
+      "evidence_quote": "Mỗi khách (user_id) được biểu diễn bởi bốn đặc trưng số"
+    },
+    {
+      "id": "q17",
+      "type": "direct_with_metadata_filter",
+      "split": "test",
+      "question": "Chỉ xét Chương 4, giá trị k nào có silhouette cao nhất và bằng bao nhiêu?",
+      "expected_answer": "k = 3, silhouette 0,4435.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 16,
+      "evidence_quote": "Silhouette đạt cao nhất tại k = 3 (0,4435)",
+      "filter": {
+        "section": "Chương 4 - kết quả thực nghiệm"
+      }
+    },
+    {
+      "id": "q18",
+      "type": "direct",
+      "split": "test",
+      "question": "Theo mô tả nhóm 3, bao nhiêu đơn mỗi khách có trung bình, khoảng cách mua lại bao lâu và tỉ lệ mua lại là bao nhiêu?",
+      "expected_answer": "Hơn 52 đơn/khách, khoảng 6,9 ngày và tỉ lệ mua lại 0,72.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 17,
+      "evidence_quote": "Trung bình hơn 52 đơn/khách, khoảng cách chỉ ~6,9 ngày, tỉ lệ mua lại 0,72"
+    },
+    {
+      "id": "q19",
+      "type": "exception",
+      "split": "test",
+      "question": "Báo cáo đề xuất những cách nào để giảm rủi ro job pair co-occurrence quá nặng?",
+      "expected_answer": "Lọc top-N món, giới hạn kích thước giỏ, lấy mẫu đơn và kiểm soát số partition.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 18,
+      "evidence_quote": "giới hạn kích thước giỏ, lấy mẫu đơn, và kiểm soát số partition"
+    },
+    {
+      "id": "q20",
+      "type": "synthesis",
+      "split": "test",
+      "question": "Báo cáo kết luận giờ cao điểm đặt hàng vào khoảng mấy giờ?",
+      "expected_answer": "Khoảng 10 giờ.",
+      "gold_source_id": "report-instacart",
+      "gold_page": 19,
+      "evidence_quote": "đặt hàng cao điểm quanh 10 giờ và ngày dow = 0"
+    }
+  ]
+}

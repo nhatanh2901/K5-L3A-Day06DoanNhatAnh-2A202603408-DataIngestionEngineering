@@ -1,0 +1,78 @@
+{
+  "run_at_utc": "2026-11-13T11:44:18.339819+00:00",
+  "phase": "dev",
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_model_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "embedding_dimensions": 384,
+  "embedding_max_sequence_length": 128,
+  "vector_store": "Chroma PersistentClient",
+  "versions": {
+    "python": "3.13.5",
+    "pypdf": "6.21.4",
+    "chromadb": "1.5.9",
+    "sentence-transformers": "5.7.0"
+  },
+  "distance_metric": "cosine",
+  "corpus_files": [
+    "starter/data/Report Data.pdf"
+  ],
+  "physical_pages": 20,
+  "useful_content_pages": 19,
+  "required_content_pages": 30,
+  "corpus_requirement_met": false,
+  "pdf_extraction_seconds": 0.8550413000011758,
+  "query_embedding_seconds": 0.2080523999993602,
+  "strategies": {
+    "A": {
+      "chunk_count": 142,
+      "total_characters": 39680,
+      "min_characters": 48,
+      "median_characters": 300.0,
+      "max_characters": 300,
+      "total_tokens": 11591,
+      "median_tokens": 84.5,
+      "chunking": "fixed-size 300 chars, overlap 40",
+      "retrieval_filter": "none",
+      "chunking_seconds": 0.0010524000008445,
+      "embedding_seconds": 2.5081050999997387,
+      "vector_store_seconds": 0.1711580999999569,
+      "ingestion_seconds": 3.535356900001716,
+      "retrieval_seconds": 0.028356099994198303,
+      "estimated_service_cost": 0.0
+    },
+    "B": {
+      "chunk_count": 138,
+      "total_characters": 34699,
+      "min_characters": 78,
+      "median_characters": 258.0,
+      "max_characters": 300,
+      "total_tokens": 10120,
+      "median_tokens": 74.0,
+      "chunking": "source-line groups, max 300 chars",
+      "retrieval_filter": "none",
+      "chunking_seconds": 0.0012908999997307546,
+      "embedding_seconds": 2.2780654999987746,
+      "vector_store_seconds": 0.1847698000001401,
+      "ingestion_seconds": 3.3191674999998213,
+      "retrieval_seconds": 0.02446740000596037,
+      "estimated_service_cost": 0.0
+    },
+    "C": {
+      "chunk_count": 138,
+      "total_characters": 34699,
+      "min_characters": 78,
+      "median_characters": 258.0,
+      "max_characters": 300,
+      "total_tokens": 10120,
+      "median_tokens": 74.0,
+      "chunking": "source-line groups, max 300 chars",
+      "retrieval_filter": "question section metadata filter",
+      "chunking_seconds": 0.0012908999997307546,
+      "embedding_seconds": 2.2780654999987746,
+      "vector_store_seconds": 0.14724509999905422,
+      "ingestion_seconds": 3.2816427999987354,
+      "retrieval_seconds": 0.025023700003657723,
+      "estimated_service_cost": 0.0
+    }
+  }
+}

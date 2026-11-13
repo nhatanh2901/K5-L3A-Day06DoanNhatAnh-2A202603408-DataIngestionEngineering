@@ -1,0 +1,141 @@
+{
+  "documents": [
+    {
+      "source_id": "report-instacart",
+      "document_id": "report-instacart",
+      "title": "Phân tích hành vi mua sắm Instacart trên Big Data",
+      "source_path_or_url": "starter/data/Report Data.pdf",
+      "source_url": null,
+      "license_or_permission": "Người học xác nhận có quyền chia sẻ PDF và các trích đoạn trên repository GitHub công khai; tài liệu không ghi tên giấy phép cụ thể.",
+      "accessed_at": "Chưa rõ ngày truy cập nguồn gốc; file được thêm vào workspace ngày 2026-11-13.",
+      "snapshot_sha256": "4df6bc369a856d1edd729bf57b2c184bd4e2497e7ad3fb703d2158d72521ddd6",
+      "physical_page_count": 20,
+      "useful_content_page_count": 19,
+      "pages": [
+        {
+          "page": 1,
+          "section": "Chương 1 - mở đầu",
+          "character_count": 2101,
+          "counted_as_content": true
+        },
+        {
+          "page": 2,
+          "section": "Chương 1 - mở đầu",
+          "character_count": 2036,
+          "counted_as_content": true
+        },
+        {
+          "page": 3,
+          "section": "Chương 1 - mở đầu",
+          "character_count": 1431,
+          "counted_as_content": true
+        },
+        {
+          "page": 4,
+          "section": "Chương 2 - cơ sở lý thuyết",
+          "character_count": 2255,
+          "counted_as_content": true
+        },
+        {
+          "page": 5,
+          "section": "Chương 2 - cơ sở lý thuyết",
+          "character_count": 2138,
+          "counted_as_content": true
+        },
+        {
+          "page": 6,
+          "section": "Chương 2 - cơ sở lý thuyết",
+          "character_count": 2128,
+          "counted_as_content": true
+        },
+        {
+          "page": 7,
+          "section": "Chương 2 - cơ sở lý thuyết",
+          "character_count": 2084,
+          "counted_as_content": true
+        },
+        {
+          "page": 8,
+          "section": "Chương 2 - cơ sở lý thuyết",
+          "character_count": 2165,
+          "counted_as_content": true
+        },
+        {
+          "page": 9,
+          "section": "Chương 2 - cơ sở lý thuyết",
+          "character_count": 419,
+          "counted_as_content": true
+        },
+        {
+          "page": 10,
+          "section": "Chương 3 - dữ liệu và môi trường thực nghiệm",
+          "character_count": 1690,
+          "counted_as_content": true
+        },
+        {
+          "page": 11,
+          "section": "Chương 3 - dữ liệu và môi trường thực nghiệm",
+          "character_count": 1466,
+          "counted_as_content": true
+        },
+        {
+          "page": 12,
+          "section": "Chương 4 - kết quả thực nghiệm",
+          "character_count": 2199,
+          "counted_as_content": true
+        },
+        {
+          "page": 13,
+          "section": "Chương 4 - kết quả thực nghiệm",
+          "character_count": 1877,
+          "counted_as_content": true
+        },
+        {
+          "page": 14,
+          "section": "Chương 4 - kết quả thực nghiệm",
+          "character_count": 1885,
+          "counted_as_content": true
+        },
+        {
+          "page": 15,
+          "section": "Chương 4 - kết quả thực nghiệm",
+          "character_count": 1483,
+          "counted_as_content": true
+        },
+        {
+          "page": 16,
+          "section": "Chương 4 - kết quả thực nghiệm",
+          "character_count": 1563,
+          "counted_as_content": true
+        },
+        {
+          "page": 17,
+          "section": "Chương 4 - kết quả thực nghiệm",
+          "character_count": 2057,
+          "counted_as_content": true
+        },
+        {
+          "page": 18,
+          "section": "Chương 4 - kết quả thực nghiệm",
+          "character_count": 2140,
+          "counted_as_content": true
+        },
+        {
+          "page": 19,
+          "section": "Kết luận",
+          "character_count": 1701,
+          "counted_as_content": true
+        },
+        {
+          "page": 20,
+          "section": "Tài liệu tham khảo",
+          "character_count": 961,
+          "counted_as_content": false
+        }
+      ]
+    }
+  ],
+  "content_page_rule": "Trang có ít nhất 150 ký tự trích xuất; loại trang tài liệu tham khảo.",
+  "physical_page_count": 20,
+  "useful_content_page_count": 19
+}

@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed character windows,300,40,"document_id;source;page;section",none,"sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211226b894fcb81acc59f3b34ba3efd5f42; Chroma cosine","Baseline; fixed windows may split contextual units.",0.1333,0.5333,0.4,0.6,"19 useful pages; instructor waiver reported by learner; sharing permission confirmed by learner; coherence/grounding reviews AI-assisted."
+B,greedy source-line/paragraph groups,300,0,"document_id;source;page;section",none,"sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211226b894fcb81acc59f3b34ba3efd5f42; Chroma cosine","Compared with A, structure-aware chunking may improve coherence and evidence retrieval.",0.2,0.4,0.6,0.6,"19 useful pages; instructor waiver reported by learner; sharing permission confirmed by learner; coherence/grounding reviews AI-assisted."
+C,greedy source-line/paragraph groups,300,0,"document_id;source;page;section","section filter only when supplied in question","sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211226b894fcb81acc59f3b34ba3efd5f42; Chroma cosine","Compared with B, metadata filtering may reduce cross-section retrieval errors.",0.2,0.4,0.6,0.6,"19 useful pages; instructor waiver reported by learner; sharing permission confirmed by learner; coherence/grounding reviews AI-assisted."

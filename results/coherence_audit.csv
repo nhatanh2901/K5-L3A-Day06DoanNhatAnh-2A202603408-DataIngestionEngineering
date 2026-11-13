@@ -1,0 +1,207 @@
+﻿strategy,document_id,page,source_anchor_preview,chunk_id,chunk_text,score_0_to_2,reason
+A,report-instacart,1,"Trong bối cảnh chuyển đổi số, hoạt động mua sắm trực tuyến và thương mại điện tử
+tạo ra một lượng dữ liệu giao dịch khổng lồ: đơn hàng, chi tiết sản phẩm trong ",f881f4a68827b1937a6ef54a9474560a0c7c42bdc1484395e7fe36cbb1469c0d,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 1
+CHƯƠNG 1. MỞ ĐẦU
+1.1. Đặt vấn đề
+Trong bối cảnh chuyển đổi số, hoạt động mua sắm trực tuyến và thương mại điện tử
+tạo ra một lượng dữ liệu giao dịch khổng lồ: đơn hàng, chi tiết sản phẩm trong từng giỏ,
+lịch sử mua lại, thời điểm đặt hàng, th",0,AI-assisted: ends mid-word; opening idea is cut.
+B,report-instacart,1,"Trong bối cảnh chuyển đổi số, hoạt động mua sắm trực tuyến và thương mại điện tử
+tạo ra một lượng dữ liệu giao dịch khổng lồ: đơn hàng, chi tiết sản phẩm trong ",b59fef306c3c28f01eb1e91227df0ecb990ec2b6685b939f20377e0854dcba8c,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 1
+CHƯƠNG 1. MỞ ĐẦU
+1.1. Đặt vấn đề
+Trong bối cảnh chuyển đổi số, hoạt động mua sắm trực tuyến và thương mại điện tử
+tạo ra một lượng dữ liệu giao dịch khổng lồ: đơn hàng, chi tiết sản phẩm trong từng giỏ,",1,"AI-assisted: context is clear, but the sentence ends after a comma."
+C,report-instacart,1,"Trong bối cảnh chuyển đổi số, hoạt động mua sắm trực tuyến và thương mại điện tử
+tạo ra một lượng dữ liệu giao dịch khổng lồ: đơn hàng, chi tiết sản phẩm trong ",b59fef306c3c28f01eb1e91227df0ecb990ec2b6685b939f20377e0854dcba8c,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 1
+CHƯƠNG 1. MỞ ĐẦU
+1.1. Đặt vấn đề
+Trong bối cảnh chuyển đổi số, hoạt động mua sắm trực tuyến và thương mại điện tử
+tạo ra một lượng dữ liệu giao dịch khổng lồ: đơn hàng, chi tiết sản phẩm trong từng giỏ,",1,"AI-assisted: context is clear, but the sentence ends after a comma."
+A,report-instacart,3,"nhưng không hoàn thành thực nghiệm đầy đủ trên toàn bộ dữ liệu prior do tài nguyên
+cụm lab hạn chế (job rất nặng, dễ đứng máy). Đây được xem là hạn chế hạ tầng,",dee142c30a2947dbdeb8eea8f7f82e76f4af5303b0a8e56ae33f5b5ac86d5111,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 3
+nhưng không hoàn thành thực nghiệm đầy đủ trên toàn bộ dữ liệu prior do tài nguyên
+cụm lab hạn chế (job rất nặng, dễ đứng máy). Đây được xem là hạn chế hạ tầng,
+không phải thiếu phương pháp.
+• Phân nhóm khách chỉ dùng KMeans với bốn đặc trưng",1,"AI-assisted: meaning is partly clear, but the bullet stops before listing the four features."
+B,report-instacart,3,"nhưng không hoàn thành thực nghiệm đầy đủ trên toàn bộ dữ liệu prior do tài nguyên
+cụm lab hạn chế (job rất nặng, dễ đứng máy). Đây được xem là hạn chế hạ tầng,",073858eb07c339503108fa0e96bffb7c2585223c8524d4917363b151aa8b46d7,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 3
+nhưng không hoàn thành thực nghiệm đầy đủ trên toàn bộ dữ liệu prior do tài nguyên
+cụm lab hạn chế (job rất nặng, dễ đứng máy). Đây được xem là hạn chế hạ tầng,
+không phải thiếu phương pháp.",2,"AI-assisted: complete point about resource limitations, ending with a full sentence."
+C,report-instacart,3,"nhưng không hoàn thành thực nghiệm đầy đủ trên toàn bộ dữ liệu prior do tài nguyên
+cụm lab hạn chế (job rất nặng, dễ đứng máy). Đây được xem là hạn chế hạ tầng,",073858eb07c339503108fa0e96bffb7c2585223c8524d4917363b151aa8b46d7,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 3
+nhưng không hoàn thành thực nghiệm đầy đủ trên toàn bộ dữ liệu prior do tài nguyên
+cụm lab hạn chế (job rất nặng, dễ đứng máy). Đây được xem là hạn chế hạ tầng,
+không phải thiếu phương pháp.",2,"AI-assisted: complete point about resource limitations, ending with a full sentence."
+A,report-instacart,5,"Hadoop là framework mã nguồn mở hỗ trợ lưu trữ và xử lý dữ liệu lớn trên cụm máy.
+Kiến trúc xếp lớp thường gồm: lớp lưu trữ (HDFS), lớp quản lý tài nguyên (YARN",3b01233f8f4b17d68e62961a39c17fe464514005f5d1be698404b79ce063842b,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 5
+2.2. Hadoop và hệ thống tệp tin phân tán HDFS
+2.2.1. Vai trò của Hadoop trong hệ sinh thái Big Data
+Hadoop là framework mã nguồn mở hỗ trợ lưu trữ và xử lý dữ liệu lớn trên cụm máy.
+Kiến trúc xếp lớp thường gồm: lớp lưu trữ (HDFS), lớp quản l",0,AI-assisted: ends mid-word in the Hadoop architecture description.
+B,report-instacart,5,"Hadoop là framework mã nguồn mở hỗ trợ lưu trữ và xử lý dữ liệu lớn trên cụm máy.
+Kiến trúc xếp lớp thường gồm: lớp lưu trữ (HDFS), lớp quản lý tài nguyên (YARN",92bb611510ae0a448170292ce3b131d4d194bce473ec6a883983552b950f1766,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 5
+2.2. Hadoop và hệ thống tệp tin phân tán HDFS
+2.2.1. Vai trò của Hadoop trong hệ sinh thái Big Data
+Hadoop là framework mã nguồn mở hỗ trợ lưu trữ và xử lý dữ liệu lớn trên cụm máy.",2,AI-assisted: complete Hadoop definition with a clear subject and main idea.
+C,report-instacart,5,"Hadoop là framework mã nguồn mở hỗ trợ lưu trữ và xử lý dữ liệu lớn trên cụm máy.
+Kiến trúc xếp lớp thường gồm: lớp lưu trữ (HDFS), lớp quản lý tài nguyên (YARN",92bb611510ae0a448170292ce3b131d4d194bce473ec6a883983552b950f1766,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 5
+2.2. Hadoop và hệ thống tệp tin phân tán HDFS
+2.2.1. Vai trò của Hadoop trong hệ sinh thái Big Data
+Hadoop là framework mã nguồn mở hỗ trợ lưu trữ và xử lý dữ liệu lớn trên cụm máy.",2,AI-assisted: complete Hadoop definition with a clear subject and main idea.
+A,report-instacart,7,"Hiểu kiến trúc này giúp giải thích vì sao một số thao tác (ví dụ self-join sinh ra lượng
+cặp khổng lồ, hoặc collect toàn bộ bảng lớn về Driver) dễ làm đầy bộ nh",789edb0ed3b942bb6dfeba27a83703ca45a6ba65e405546160934c716167db66,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 7
+Hiểu kiến trúc này giúp giải thích vì sao một số thao tác (ví dụ self-join sinh ra lượng
+cặp khổng lồ, hoặc collect toàn bộ bảng lớn về Driver) dễ làm đầy bộ nhớ và làm đứng
+máy, trong khi groupBy/agg rồi mới toPandas trên bảng tổng hợp nhỏ t",0,AI-assisted: sentence about memory failure is cut mid-phrase.
+B,report-instacart,7,"Hiểu kiến trúc này giúp giải thích vì sao một số thao tác (ví dụ self-join sinh ra lượng
+cặp khổng lồ, hoặc collect toàn bộ bảng lớn về Driver) dễ làm đầy bộ nh",239df7238dc917f58c91085483e806394a7ecd2ac034f5c54f537af8def20a9b,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 7
+Hiểu kiến trúc này giúp giải thích vì sao một số thao tác (ví dụ self-join sinh ra lượng
+cặp khổng lồ, hoặc collect toàn bộ bảng lớn về Driver) dễ làm đầy bộ nhớ và làm đứng",1,"AI-assisted: topic is clear, but the example ends mid-sentence."
+C,report-instacart,7,"Hiểu kiến trúc này giúp giải thích vì sao một số thao tác (ví dụ self-join sinh ra lượng
+cặp khổng lồ, hoặc collect toàn bộ bảng lớn về Driver) dễ làm đầy bộ nh",239df7238dc917f58c91085483e806394a7ecd2ac034f5c54f537af8def20a9b,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 7
+Hiểu kiến trúc này giúp giải thích vì sao một số thao tác (ví dụ self-join sinh ra lượng
+cặp khổng lồ, hoặc collect toàn bộ bảng lớn về Driver) dễ làm đầy bộ nhớ và làm đứng",1,"AI-assisted: topic is clear, but the example ends mid-sentence."
+A,report-instacart,9,"Self-join theo order_id với điều kiện product_id_a < product_id_b cho phép đếm số
+đơn chứa đồng thời hai món mà không trùng cặp đối xứng. Tuy nhiên số cặp ứng v",a9e5049693e7df2bcd605a3c92ba0a6c54798b140c833086d7e1a550f42f3043,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 9
+Self-join theo order_id với điều kiện product_id_a < product_id_b cho phép đếm số
+đơn chứa đồng thời hai món mà không trùng cặp đối xứng. Tuy nhiên số cặp ứng viên tăng
+nhanh theo kích thước giỏ và theo số món được giữ lại, dễ vượt khả năng c",0,AI-assisted: self-join explanation ends mid-sentence.
+B,report-instacart,9,"Self-join theo order_id với điều kiện product_id_a < product_id_b cho phép đếm số
+đơn chứa đồng thời hai món mà không trùng cặp đối xứng. Tuy nhiên số cặp ứng v",33e2bc5d92178797bcc3952234a482048695cec430c8b70226479e8067d5a044,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 9
+Self-join theo order_id với điều kiện product_id_a < product_id_b cho phép đếm số
+đơn chứa đồng thời hai món mà không trùng cặp đối xứng. Tuy nhiên số cặp ứng viên tăng",1,"AI-assisted: self-join method is clear, but the candidate-pair sentence is cut."
+C,report-instacart,9,"Self-join theo order_id với điều kiện product_id_a < product_id_b cho phép đếm số
+đơn chứa đồng thời hai món mà không trùng cặp đối xứng. Tuy nhiên số cặp ứng v",33e2bc5d92178797bcc3952234a482048695cec430c8b70226479e8067d5a044,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 9
+Self-join theo order_id với điều kiện product_id_a < product_id_b cho phép đếm số
+đơn chứa đồng thời hai món mà không trùng cặp đối xứng. Tuy nhiên số cặp ứng viên tăng",1,"AI-assisted: self-join method is clear, but the candidate-pair sentence is cut."
+A,report-instacart,11,"Các số này là cơ sở để tính tỉ lệ, trung bình và để đối chiếu khi kiểm tra tính đúng đắn
+của pipeline (không bị mất dữ liệu do đọc sai đường dẫn hay filter nhầm",71d99c780d50bab0f8ff2f4a24a8bcf330074f63308524e976fc9394ac76daf8,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 11
+
+Các số này là cơ sở để tính tỉ lệ, trung bình và để đối chiếu khi kiểm tra tính đúng đắn
+của pipeline (không bị mất dữ liệu do đọc sai đường dẫn hay filter nhầm eval_set).
+3.4. Môi trường phần cứng / phần mềm
+Thực nghiệm chạy trên cụm Spark",1,AI-assisted: prior paragraph is understandable; environment description only begins.
+B,report-instacart,11,"Các số này là cơ sở để tính tỉ lệ, trung bình và để đối chiếu khi kiểm tra tính đúng đắn
+của pipeline (không bị mất dữ liệu do đọc sai đường dẫn hay filter nhầm",c21fd168b0833a55ae294e40f2bb3625b9a5d250847fa1abc1b9192de974d49a,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 11
+
+Các số này là cơ sở để tính tỉ lệ, trung bình và để đối chiếu khi kiểm tra tính đúng đắn
+của pipeline (không bị mất dữ liệu do đọc sai đường dẫn hay filter nhầm eval_set).
+3.4. Môi trường phần cứng / phần mềm",2,AI-assisted: preceding paragraph is complete; next section heading is preserved.
+C,report-instacart,11,"Các số này là cơ sở để tính tỉ lệ, trung bình và để đối chiếu khi kiểm tra tính đúng đắn
+của pipeline (không bị mất dữ liệu do đọc sai đường dẫn hay filter nhầm",c21fd168b0833a55ae294e40f2bb3625b9a5d250847fa1abc1b9192de974d49a,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 11
+
+Các số này là cơ sở để tính tỉ lệ, trung bình và để đối chiếu khi kiểm tra tính đúng đắn
+của pipeline (không bị mất dữ liệu do đọc sai đường dẫn hay filter nhầm eval_set).
+3.4. Môi trường phần cứng / phần mềm",2,AI-assisted: preceding paragraph is complete; next section heading is preserved.
+A,report-instacart,13,"Trường days_since_prior_order đo số ngày từ đơn trước đến đơn hiện tại (đơn đầu của
+khách thường thiếu giá trị này). Ba mức phổ biến nhất trong thực nghiệm là:
+",ae464a5fdedb970687bdd3d360e9996469cf47fc718476087adeb6ecfd600d0f,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 13
+4.1.3. Khoảng cách giữa hai đơn liên tiếp
+Trường days_since_prior_order đo số ngày từ đơn trước đến đơn hiện tại (đơn đầu của
+khách thường thiếu giá trị này). Ba mức phổ biến nhất trong thực nghiệm là:
+
+Khoảng cách (ngày) Số lượng quan sát
+3",1,"AI-assisted: table context is clear, but the data row is cut after its first value."
+B,report-instacart,13,"Trường days_since_prior_order đo số ngày từ đơn trước đến đơn hiện tại (đơn đầu của
+khách thường thiếu giá trị này). Ba mức phổ biến nhất trong thực nghiệm là:
+",f99b9eede59b09dc36154fdad94156bd044a9bfd773795d694096665fa4e946f,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 13
+4.1.3. Khoảng cách giữa hai đơn liên tiếp
+Trường days_since_prior_order đo số ngày từ đơn trước đến đơn hiện tại (đơn đầu của
+khách thường thiếu giá trị này). Ba mức phổ biến nhất trong thực nghiệm là:
+
+Khoảng cách (ngày) Số lượng quan sát",1,"AI-assisted: field description is clear, but table values are missing."
+C,report-instacart,13,"Trường days_since_prior_order đo số ngày từ đơn trước đến đơn hiện tại (đơn đầu của
+khách thường thiếu giá trị này). Ba mức phổ biến nhất trong thực nghiệm là:
+",f99b9eede59b09dc36154fdad94156bd044a9bfd773795d694096665fa4e946f,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 13
+4.1.3. Khoảng cách giữa hai đơn liên tiếp
+Trường days_since_prior_order đo số ngày từ đơn trước đến đơn hiện tại (đơn đầu của
+khách thường thiếu giá trị này). Ba mức phổ biến nhất trong thực nghiệm là:
+
+Khoảng cách (ngày) Số lượng quan sát",1,"AI-assisted: field description is clear, but table values are missing."
+A,report-instacart,15,"Nhìn chung, khách Instacart mua theo nhịp ngắn đến trung bình, giỏ khoảng 8 –10
+món, trung thành tương đối với mặt hàng đã biết, và tập trung vào thực phẩm tươi",caaf96c982a8ab06c11b325a4db49f8cd27f8c5918d1a17fa6fce98bf9e0c54e,"ành hàng nổi bật produce
+Ngày / giờ đặt nhiều dow = 0 / 10 giờ
+Bảng 4.2. Các chỉ số mô tả chính
+Nhìn chung, khách Instacart mua theo nhịp ngắn đến trung bình, giỏ khoảng 8 –10
+món, trung thành tương đối với mặt hàng đã biết, và tập trung vào thực phẩm tươi. Các kết
+luận này cung cấp ngữ cảnh để hiểu",0,AI-assisted: starts mid-word and contains a broken table fragment.
+B,report-instacart,15,"Nhìn chung, khách Instacart mua theo nhịp ngắn đến trung bình, giỏ khoảng 8 –10
+món, trung thành tương đối với mặt hàng đã biết, và tập trung vào thực phẩm tươi",5dfa31a7500026547bcd66c2ab8bea15ec5c41448c5c30401adcdef54d63b77c,"Ngày / giờ đặt nhiều dow = 0 / 10 giờ
+Bảng 4.2. Các chỉ số mô tả chính
+Nhìn chung, khách Instacart mua theo nhịp ngắn đến trung bình, giỏ khoảng 8 –10
+món, trung thành tương đối với mặt hàng đã biết, và tập trung vào thực phẩm tươi. Các kết",1,AI-assisted: table summary is partly understandable; final sentence is cut.
+C,report-instacart,15,"Nhìn chung, khách Instacart mua theo nhịp ngắn đến trung bình, giỏ khoảng 8 –10
+món, trung thành tương đối với mặt hàng đã biết, và tập trung vào thực phẩm tươi",5dfa31a7500026547bcd66c2ab8bea15ec5c41448c5c30401adcdef54d63b77c,"Ngày / giờ đặt nhiều dow = 0 / 10 giờ
+Bảng 4.2. Các chỉ số mô tả chính
+Nhìn chung, khách Instacart mua theo nhịp ngắn đến trung bình, giỏ khoảng 8 –10
+món, trung thành tương đối với mặt hàng đã biết, và tập trung vào thực phẩm tươi. Các kết",1,AI-assisted: table summary is partly understandable; final sentence is cut.
+A,report-instacart,17,"gặp trong bán lẻ: nhóm khách “bình thường” và “thưa” đông; nhóm rất trung thành là thiểu
+số nhưng giá trị gắn bó cao.
+[Chèn ảnh: Biểu đồ cột nhóm đặc trưng đã c",5ca9b52ee2d0d559bea4db3e516455ee9f30b10f3de841b86cdf0b5c1cb100a6,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 17
+gặp trong bán lẻ: nhóm khách “bình thường” và “thưa” đông; nhóm rất trung thành là thiểu
+số nhưng giá trị gắn bó cao.
+[Chèn ảnh: Biểu đồ cột nhóm đặc trưng đã chia cho max để so sánh]
+Hình 4.7b. So sánh đặc trưng giữa các nhóm (đã chia cho m",0,AI-assisted: starts and ends mid-thought; the final phrase is incomplete.
+B,report-instacart,17,"gặp trong bán lẻ: nhóm khách “bình thường” và “thưa” đông; nhóm rất trung thành là thiểu
+số nhưng giá trị gắn bó cao.
+[Chèn ảnh: Biểu đồ cột nhóm đặc trưng đã c",cf326f6e4af1b22a4a032bf2e914ebf14c282af9f7b3f3dfe39ad42a65174435,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 17
+gặp trong bán lẻ: nhóm khách “bình thường” và “thưa” đông; nhóm rất trung thành là thiểu
+số nhưng giá trị gắn bó cao.
+[Chèn ảnh: Biểu đồ cột nhóm đặc trưng đã chia cho max để so sánh]",1,"AI-assisted: most content is clear, but the opening depends on prior context."
+C,report-instacart,17,"gặp trong bán lẻ: nhóm khách “bình thường” và “thưa” đông; nhóm rất trung thành là thiểu
+số nhưng giá trị gắn bó cao.
+[Chèn ảnh: Biểu đồ cột nhóm đặc trưng đã c",cf326f6e4af1b22a4a032bf2e914ebf14c282af9f7b3f3dfe39ad42a65174435,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 17
+gặp trong bán lẻ: nhóm khách “bình thường” và “thưa” đông; nhóm rất trung thành là thiểu
+số nhưng giá trị gắn bó cao.
+[Chèn ảnh: Biểu đồ cột nhóm đặc trưng đã chia cho max để so sánh]",1,"AI-assisted: most content is clear, but the opening depends on prior context."
+A,report-instacart,19,"nghiệm vận hành, thực nghiệm làm rõ ranh giới giữa job “chạy được” và job “quá nặng”
+trên cụm nhỏ — bài học quan trọng khi triển khai hệ thống thật.
+KẾT LUẬN VÀ",96a764d038aff767869bf60f5676539647f5069bd8d543b49b309fc47ed8317a,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 19
+nghiệm vận hành, thực nghiệm làm rõ ranh giới giữa job “chạy được” và job “quá nặng”
+trên cụm nhỏ — bài học quan trọng khi triển khai hệ thống thật.
+KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
+Kết luận
+Đề tài đã triển khai phân tích hành vi mua sắm trên bộ",1,"AI-assisted: conclusion heading is visible, but surrounding prose is cut."
+B,report-instacart,19,"nghiệm vận hành, thực nghiệm làm rõ ranh giới giữa job “chạy được” và job “quá nặng”
+trên cụm nhỏ — bài học quan trọng khi triển khai hệ thống thật.
+KẾT LUẬN VÀ",231338bf56ef7644403bbe3334e8020c9e56bc95e62013fe2b03f4649c6d99eb,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 19
+nghiệm vận hành, thực nghiệm làm rõ ranh giới giữa job “chạy được” và job “quá nặng”
+trên cụm nhỏ — bài học quan trọng khi triển khai hệ thống thật.
+KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
+Kết luận",1,AI-assisted: conclusion passage starts mid-sentence and stops at a heading.
+C,report-instacart,19,"nghiệm vận hành, thực nghiệm làm rõ ranh giới giữa job “chạy được” và job “quá nặng”
+trên cụm nhỏ — bài học quan trọng khi triển khai hệ thống thật.
+KẾT LUẬN VÀ",231338bf56ef7644403bbe3334e8020c9e56bc95e62013fe2b03f4649c6d99eb,"Phân tích hành vi mua sắm Instacart trên Big Data
+Trang 19
+nghiệm vận hành, thực nghiệm làm rõ ranh giới giữa job “chạy được” và job “quá nặng”
+trên cụm nhỏ — bài học quan trọng khi triển khai hệ thống thật.
+KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
+Kết luận",1,AI-assisted: conclusion passage starts mid-sentence and stops at a heading.

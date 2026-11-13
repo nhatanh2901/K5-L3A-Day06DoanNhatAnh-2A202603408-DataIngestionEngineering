@@ -1,0 +1,20 @@
+{
+  "selected_strategy": "A",
+  "selected_after": "dev",
+  "selection_rule": [
+    "Highest dev Evidence Hit@3",
+    "Then highest dev Hit@1",
+    "Then fewer chunks"
+  ],
+  "selection_metrics": {
+    "strategy": "A",
+    "split": "dev",
+    "questions": 15,
+    "hit_at_1_count": 2,
+    "hit_at_1": 0.13333333333333333,
+    "evidence_hit_at_3_count": 8,
+    "evidence_hit_at_3": 0.5333333333333333
+  },
+  "corpus_requirement_met": false,
+  "selected_at_utc": "2026-11-13T11:44:18.343560+00:00"
+}
